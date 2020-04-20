@@ -31,7 +31,7 @@ requirements:
 
 test:
   imports:
-    - xcape
+    - xcape.core
 
 about:
   home: https://github.com/xgcm/xcape
