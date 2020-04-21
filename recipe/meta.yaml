@@ -26,7 +26,7 @@ requirements:
   run:
     - python
     - xarray >=0.14.1
-    - dask-core
+    - dask
     - {{ pin_compatible('numpy') }}
 
 test:
