@@ -1,6 +1,6 @@
 {% set name = "xcape" %}
-{% set version = "0.1" %}
-{% set sha256 = "288dd48bf9257cf7afed92c45b6c98b50db60e5cd13cd4d964e2522c6add84bd" %}
+{% set version = "0.1.1" %}
+{% set sha256 = "344812b7a52cf9ec32fd1d2df00f77fa9e65a4c7a508d622da9c460d21f46389" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
 
 build:
   number: 0
-  skip: True  # [py<36 or win]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  skip: true  # [py<36 or win]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -26,19 +26,19 @@ requirements:
   run:
     - python
     - xarray >=0.14.1
-    - dask-core
+    - dask
     - {{ pin_compatible('numpy') }}
 
 test:
   imports:
-    - xcape
+    - xcape.core
 
 about:
   home: https://github.com/xgcm/xcape
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Fast convective parameters for numpy, dask, and xarray"
+  summary: Fast convective parameters for numpy, dask, and xarray
 
 extra:
   recipe-maintainers:
