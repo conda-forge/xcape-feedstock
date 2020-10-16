@@ -1,6 +1,6 @@
 {% set name = "xcape" %}
-{% set version = "0.1.1" %}
-{% set sha256 = "344812b7a52cf9ec32fd1d2df00f77fa9e65a4c7a508d622da9c460d21f46389" %}
+{% set version = "0.1.2" %}
+{% set sha256 = "c8ba2fbe04b9078466c003a3992683f1c16e8687cc53004c2eb13c45cccf0c9d" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,7 @@ requirements:
   host:
     - python
     - pip
-    - numpy 1.16
+    - numpy
   run:
     - python
     - xarray >=0.14.1
