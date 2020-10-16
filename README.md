@@ -5,11 +5,9 @@ Home: https://github.com/xgcm/xcape
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xcape-feedstock/blob/master/LICENSE.txt)
 
 Summary: Fast convective parameters for numpy, dask, and xarray
-
-
 
 Current build status
 ====================
