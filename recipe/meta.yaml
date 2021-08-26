@@ -1,6 +1,6 @@
 {% set name = "xcape" %}
-{% set version = "0.1.2" %}
-{% set sha256 = "c8ba2fbe04b9078466c003a3992683f1c16e8687cc53004c2eb13c45cccf0c9d" %}
+{% set version = "0.1.3" %}
+{% set sha256 = "caf693a2019216ee4cc242b773acf1b058c3223c2b0303f22b05422331a00848" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   skip: true  # [py<36 or win]
   script: {{ PYTHON }} -m pip install . -vv
 
