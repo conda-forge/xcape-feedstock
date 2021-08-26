@@ -1,6 +1,6 @@
 {% set name = "xcape" %}
-{% set version = "0.1.3" %}
-{% set sha256 = "caf693a2019216ee4cc242b773acf1b058c3223c2b0303f22b05422331a00848" %}
+{% set version = "0.1.4" %}
+{% set sha256 = "3dfac0cc3c391f7375af51979d66cafa99119da019f8e53ca8c02ba3d83dc887" %}
 
 package:
   name: {{ name|lower }}
